@@ -1,3 +1,4 @@
+#N canvas 827 239 527 327 12;
 #X obj 99 499 delwrite~ karplus1 250;
 #X obj 139 619 delread4~ karplus1;
 #X obj 99 699 *~;
