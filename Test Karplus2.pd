@@ -115,7 +115,7 @@
 #X obj 59 -1 inlet~;
 #X obj 79 179 outlet~;
 #X obj 99 -1 inlet (float) tracking accuracy (from 0 to 22);
-#N canvas 733 172 450 300 ampTrack 1;
+#N canvas 733 172 450 300 ampTrack 0;
 #X obj 299 479 pow~ 2;
 #X obj 299 519 sqrt~;
 #X obj 299 499 lop~ 12;
@@ -140,7 +140,6 @@
 #X restore 339 499 pd ampTrack;
 #X obj 499 679 *~ 0.999;
 #X obj 195 727 *~ 0.996;
-#X obj 559 439 oscope~ 130 130 256 3 128 -1 1 0 0 0 0 225 225 225 25 25 25 105 105 105 0 empty;
 #X connect 1 0 7 0 empty;
 #X connect 4 0 5 0 empty;
 #X connect 5 0 6 0 empty;
@@ -244,6 +243,5 @@
 #X connect 100 0 17 0 empty;
 #X connect 100 0 26 0 empty;
 #X connect 101 0 20 0 empty;
-#X connect 101 0 104 0 empty;
 #X connect 102 0 24 1 empty;
 #X connect 103 0 7 1 empty;
